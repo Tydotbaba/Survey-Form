@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="title">
+		<h1>Survey Form</h1>
+		<p id="description"> Please fill the form below:</p>
+	</div>
+
+	<div class="form-div">
+		<form id="survey-form" autocomplete="on">
+			<label for="name" id="name-label">Name: </label>
+			<input type="text" name="name" id="name" required valid="false" 
+				placeholder="enter your name">
+
+			<label for="email" id="email-label">Email: </label>
+			<input type="email" name="email" id="email" required 
+				placeholder="yourmail@email.com">
+
+			<label for="age" id="number-label">Age: </label>
+			<input type="number" name="number" id="age" required min="20" max="30"
+				placeholder="e.g.: 22">
+
+			<select id="dropdown" >
+				<option>Select your role</option>
+				<option>Engineer</option>
+				<option>Achitech</option>
+				<option>Founder</option>
+				<option>Admin Extpert</option>
+			</select>
+
+			<fieldset>
+				<legend>Choose your sex</legend>
+				<label>
+					<input type="radio" name="gender" value="male" checked> Male	
+				</label>
+				<label>
+					<input type="radio" name="gender" value="female"> Female
+				</label>
+				<label>
+					<input type="radio" name="gender" value="other"> Other 	
+				</label>				
+			</fieldset>
+
+			<fieldset>
+				<legend>What will you like to learn?</legend>
+				<label>
+					<input type="checkbox" name="learn" value="c">Learn C
+				</label>
+				<label>
+					<input type="checkbox" name="learn" value="python">Learn Python
+				</label>
+				<label>
+					<input type="checkbox" name="learn" value="javaScript">Learn javaScript
+				</label>
+			</fieldset>
+
+			<label for="comments"> Pass your comments here:</label>
+			<textarea id="comments" name="comments" rows="4"></textarea>
+
+			<input type="submit" name="submit" value="Submit Form" required>
+
+		</form>
+	</div>
+
+</body>
+</html>

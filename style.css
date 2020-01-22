@@ -1,0 +1,146 @@
+
+body{
+	background-image: url("images/back_image.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-blend-mode: color-burn;*/
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: cambria;
+	font-size: 40px;
+	color: #0fdcc0;
+}
+
+.form-div{
+	background-color: #aabbcc;
+	margin: 8%;
+	padding: 30px;
+	border-radius: 10px;
+	font-size: 25px;
+}
+
+form{
+	width: 100%;
+}
+
+label{
+	display: block;
+	margin-bottom: 5px;
+	color: black;
+	/*font-weight: bold;*/
+	padding: 0;
+}
+
+input[type=text], input[type=email], 
+input[type=number], input[type=submit],
+select {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 10px 0;
+	width: 100%;
+	border-radius: 7px;
+	color: #0f0f0f;
+	/*background-color: #4CAF50;*/
+	border: none;
+	padding: 8px;
+	font-size: inherit;
+}
+
+select{
+	display: block;
+	margin-top: 30px;
+}
+
+textarea{
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+fieldset{
+	border: 2px solid #0000aa;
+	color: black;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+input[type=submit]{
+	margin-top: 20px;
+}
+
+input[type=submit]{
+	background-color: #4C9850;
+	color: #fffdff;
+	transition-duration: 0.5s;
+	overflow: hidden;
+}
+
+input[type=submit]:clicked{
+	background-color: #4CAF50;
+	border: 2px solid green;
+	t
+}
+
+input[type=submit]:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+input[type=submit]:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+input[type=submit]:hover{
+	background-color: #4CAF50;
+	cursor: pointer;
+	transform: perspective(2);
+}
+
+ input:required:invalid, input:focus:invalid {
+    /*background-image: url("https://www.the-art-of-web.com/images/invalid.png");*/
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+
+input:required:valid, input:focus:valid{
+	/*background-image: url("https://www.the-art-of-web.com/images/valid.png");*/
+	background-position: right top;
+    background-repeat: no-repeat;
+    /*background-size: 10%;*/
+    background-color: #4CAF50;
+}
+
+input:focus{
+	/*background-color: #4CAF50;*/
+}
+
+
+#title{
+	margin:	30px;
+	text-align: center;
+	font-weight: 5em;
+}
+
+
+
+@media (max-width: 800px){
+	body{
+		font-size: 21px;
+	}
+
+	.form-div{
+		padding: 30px;
+		font-size: 19px;
+	}
+}
