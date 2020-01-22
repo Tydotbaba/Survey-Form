@@ -1,13 +1,13 @@
-"#Survey Form" 
+# Survey Form
 
-This project is a solution to the <a href="" target="_blank" >freecodecamp's</a> Responsive Web Design certification.
+This project is a solution to the <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank" >freecodecamp's</a> Responsive Web Design certification.
 
 Project Aim: Build a Survey Form
 
-#Technology Stack
+# Technology Stack
 1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
-#Content
+# Content
 1. I can see a title with id="title" in H1 sized text.
 2. I can see a short explanation with id="description" in P sized text.
 3. I can see a <form> with id="survey-form".
