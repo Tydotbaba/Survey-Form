@@ -5,8 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="title">
-		<h1>Survey Form</h1>
+	<div id="">
+		<h1 id="title">Survey Form</h1>
 		<p id="description"> Please fill the form below:</p>
 	</div>
 
@@ -21,8 +21,8 @@
 				placeholder="yourmail@email.com">
 
 			<label for="age" id="number-label">Age: </label>
-			<input type="number" name="number" id="age" required min="20" max="30"
-				placeholder="e.g.: 22">
+			<input type="number" name="number" id="number" min="20" max="30"
+				placeholder="e.g.: 22" pattern="\d" required>
 
 			<select id="dropdown" >
 				<option>Select your role</option>
@@ -61,7 +61,7 @@
 			<label for="comments"> Pass your comments here:</label>
 			<textarea id="comments" name="comments" rows="4"></textarea>
 
-			<input type="submit" name="submit" value="Submit Form" required>
+			<input type="submit" id="submit" name="submit" value="Submit Form" required>
 
 		</form>
 	</div>
@@ -69,8 +69,7 @@
 		Website made with love by <a href="https://github.com/Tydotbaba">@Tydotbaba</a><br>
 		&copy 2020 All rights reserved. 
 	</footer>
-	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-		
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">		
 	</script>
 </body>
 </html>
