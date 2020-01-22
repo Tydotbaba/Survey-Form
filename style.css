@@ -14,6 +14,7 @@ body{
 .form-div{
 	background-color: #aabbcc;
 	margin: 8%;
+	margin-bottom: 0;
 	padding: 30px;
 	border-radius: 10px;
 	font-size: 25px;
@@ -132,7 +133,12 @@ input:focus{
 	font-weight: 5em;
 }
 
-
+footer{
+	text-align: center;
+	color: black;
+	margin: 30px auto;
+	font-size: 18px;
+}
 
 @media (max-width: 800px){
 	body{
@@ -142,5 +148,8 @@ input:focus{
 	.form-div{
 		padding: 30px;
 		font-size: 19px;
+	}
+	footer{
+		font-size: 15px;
 	}
 }
